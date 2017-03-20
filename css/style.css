@@ -145,3 +145,14 @@ form input[type=submit]:only-child {
     width: 150px;
     margin: 0 auto;
 }
+
+.lefttb{
+    list-style:none;
+    width: 220px;
+    font-size:25px;
+}
+
+.righttb{
+    list-style:none;
+    font-size:25px;
+}
