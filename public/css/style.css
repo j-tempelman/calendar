@@ -1,0 +1,246 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+@import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    Set common typography.
+
+    The preferred font is Open Sans, which is a Google Web Font, so it should be available everywhere. If it isn't, Verdana is the backup font, but only for body text, because it doesn't look good in headers.
+*/
+
+body {
+    font-family: Open Sans, Verdana, sans-serif;
+    font-size: 12pt;
+    background-color:#f9f9f9;
+}
+
+h1 {
+    font-family: Open Sans Condensed, sans-serif;
+    font-weight: normal;
+    font-size: 24pt;
+    color: #9e9e9e;
+}
+
+h2 {
+    font-family: Open Sans Condensed, sans-serif;
+    font-weight: normal;
+    font-size: 35px;
+    color: #069;
+    margin-bottom: 0;
+}
+
+/*
+    Position the month names, day numbers, and person names.
+
+    The day numbers are on the left with a list of person names to the right of them.
+*/
+
+h1 {
+    margin: 0;
+    border-bottom: 1px dotted grey;
+}
+
+h2 {
+    margin: 0;
+}
+
+h2 ~ p {    /* only applies to p-elements on the main page */
+    margin: 0;
+    position: relative;
+    top: -40px;     /* move person names to line up with the day number */
+    left: 50px;     /* make sure the person names don't overlap the day number */
+}
+
+
+/*
+    Set hyperlink styles.
+*/
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a + a {     /* delete links */
+    color: red;
+    font-size: 80%;
+    vertical-align: super;
+}
+
+
+/*
+    Set the style of forms.
+
+    Labels are in a column to the left, with input fields to the right and spanning the entire remaining width.
+*/
+
+form p {
+    margin: 5px 0;
+}
+
+form label {
+    display: inline-block;
+    width: 100px;
+}
+
+form input[type=submit]:only-child {
+    margin-left: 100px;     /* place submit button underneath fields */
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.65); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aeaeae;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.addbtn{
+    width: 150px;
+    height: 90px;
+}
+
+.btn{
+    width: 150px;
+    margin: 0 auto;
+}
+
+.lefttb{
+    list-style:none;
+    width: 220px;
+    font-size:25px;
+}
+
+.righttb{
+    list-style:none;
+    font-size:25px;
+}
+
+ /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    height: 275px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.reveal{
+    width:150px;
+    margin:0 auto;
+    margin-bottom: 20px;
+}
+
+.bottom{
+    width: 100%;
+    height: 130px;
+    background-color:#d9d9d9;
+}
+
+.content{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.invoer{
+    width: 100px;
+    height: 30px;
+    font-size:15px;
+}
+.invoer_gr{
+    width: 306px;
+    height: 50px;
+    font-size:30px;
+    display: block;
+}
+
+.txt{
+    color:#9e9e9e;
+    font-size:30px;
+    line-height:30px;
+    float: right;
+    margin-top:100px;
+}
+.menu{
+    float: left;
+    list-style: none;
+    color:#3e3e3e;
+    font-size:20px;
+}
+.modcont{
+    position:fixed;
+    top: 40%;
+    left: 50%;
+    width: 310px;
+    height:100px;
+    margin-left:-155px;
+
+}
